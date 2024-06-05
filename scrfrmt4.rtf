@@ -1,0 +1,485 @@
+{\rtf1\ansi \deff4\deflang1033{\fonttbl{\f4\froman\fcharset0\fprq2 Times New Roman;}{\f5\fswiss\fcharset0\fprq2 Arial;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;
+\red192\green192\blue192;}{\stylesheet{\widctlpar \f4\fs20 \snext0 Normal;}{\*\cs10 \additive Default Paragraph Font;}}{\info{\author Kotus}{\operator SEWP 3.0 Development}{\creatim\yr1998\mo8\dy30\hr23\min30}{\revtim\yr1998\mo12\dy18\hr13\min13}
+{\version2}{\edmins104}{\nofpages18}{\nofwords4155}{\nofchars23686}{\*\company  }{\vern57443}}\paperw11909\paperh16834\margl1080\margr1080\margt1080\margb1080 \widowctrl\ftnbj\aenddoc\hyphcaps0 \fet0\sectd \linex0\headery706\footery706\colsx709 
+{\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5
+\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang
+{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \qc\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 \f4\fs20 {\b\f5\fs32\lang2057 Sub Station Alpha v4.00 Script Format
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 
+\par 
+\par {\pntext\pard\plain\b\f5\fs20\lang2057 1. \tab}}\pard \fi-283\li1543\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980{\*\pn \pnlvlbody\pndec\pnb1\pni0\pnf5\pnfs20\pnstart1\pnindent283\pnhang{\pntxta . }}{\b\f5\lang2057 General information
+\par {\pntext\pard\plain\b\f5\fs20\lang2057 2. \tab}The [sections] of a Sub Station Alpha script
+\par {\pntext\pard\plain\b\f5\fs20\lang2057 3. \tab}The line types in a Sub Station Alpha script
+\par {\pntext\pard\plain\b\f5\fs20\lang2057 4. \tab}Header lines, [Script Info] section
+\par {\pntext\pard\plain\b\f5\fs20\lang2057 5. \tab}Style lines, [v4 Styles] section
+\par {\pntext\pard\plain\b\f5\fs20\lang2057 6. \tab}Dialogue event lines, [Events] section
+\par {\pntext\pard\plain\b\f5\fs20\lang2057 7. \tab}Comment lines, [Events] section
+\par {\pntext\pard\plain\b\f5\fs20\lang2057 8. \tab}Picture event lines, [Events] section
+\par {\pntext\pard\plain\b\f5\fs20\lang2057 9. \tab}Movie event line, [Events] section
+\par {\pntext\pard\plain\b\f5\fs20\lang2057 10. \tab}Sound event lines, [Events] section
+\par {\pntext\pard\plain\b\f5\fs20\lang2057 11. \tab}Command event lines, [Events] section
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par \tab \tab \tab \tab }{\b\f5\lang2057 Appendix A: Style override codes
+\par \tab \tab \tab \tab Appendix B: Embedded font/picture encoding
+\par }{\f5\lang2057 
+\par }\pard \qc\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\fs24\ul\lang2057 \page 1. General Information}{\b\f5\fs24\lang2057 
+\par }{\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+The information in this document assumes that you are familiar with the terms and concepts used by Sub Station Alpha (SSA). These are documented in SSA's help file, ssa.hlp which is distributed with the program, or can b
+e downloaded separatelyfrom http://www.eswat.demon.co.uk.
+\par 
+\par {\pntext\pard\plain\b\f5\fs20\lang2057 1. \tab}}\pard \fi-283\li283\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980{\*\pn \pnlvlbody\pndec\pnb1\pni0\pnf5\pnfs20\pnstart1\pnindent283\pnhang{\pntxta . }}{\b\f5\lang2057 
+The SSA v4.00 script format is different to previous versions of SSA\line }{\f5\lang2057 SSA v4.00 will read scripts from older versions, but v4.00 scripts will not load into older versions of SSA correctly.\line \line 
+Some of the changes in the script format are intended to allow all versions of SSA from v4.00 onwards to read any present or future SSA
+ scripts. In particular, the new "Format" lines allow SSA to read only the information it recognises and discard any new information that is added in future scripts.\line }{\b\f5\lang2057 
+\par {\pntext\pard\plain\b\f5\fs20\lang2057 2. \tab}Scripts are plain (DOS) text files.\line }{\f5\lang2057 
+This means they can be "manually" editied using any text editor, but caution must be exercised when doing this - SSA assumes that scripts will adhere to the "rules" set out in this document, and any errors may lead to unpredictable  results when the scrip
+t is loaded into SSA.}{\b\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par {\pntext\pard\plain\b\f5\fs20\lang2057 2. \tab}}\pard \fi-283\li283\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980{\*\pn \pnlvlbody\pndec\pnb1\pni0\pnf5\pnfs20\pnstart2\pnindent283\pnhang{\pntxta . }}{\b\f5\lang2057 The script is divided into \ldblquote 
+ini file\rdblquote  style sections\line }{\f5\lang2057 However, SSA scripts are not true Windows .ini files and you cannot do certain things you might expect!\line 
+\par {\pntext\pard\plain\b\f5\fs20\lang2057 3. \tab}}{\b\f5\lang2057 Most lines in each section begin with some sort of code - a "line descriptor"}{\f5\lang2057 , to say what information is held in it. The descriptor is terminated by a colon.
+\par }\pard \fi-270\li270\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }{\b\f5\lang2057 3.\tab The information fields in each line are separated by a commas.
+\par }{\f5\lang2057 \tab 
+This makes it illegal to use commas in character names and style names (SSA prevents you putting commas in these). It also makes it quite easy to load chunks of an SSA script into a spreadsheet as a CSV file, and chop out columns of information you need 
+for another subtitling program.
+\par 
+\par }{\b\f5\lang2057 4.\tab SSA does not care what order events are entered in.
+\par }{\f5\lang2057 \tab They could be entered in complete reverse order, and SSA would still play everything correctly in the right order ie. you cannot assume that each dialogue line is in chronological order in the script file.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-270\li270\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 5.\tab Incorrectly formatted lines are ignored.\line }{\f5\lang2057 
+SSA will discard any lines it doesn't understand, and give a warning after the script has loaded giving the number of lines it discarded.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-270\li270\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 6.\tab Lines cannot be split
+\par }{\f5\lang2057 \tab Each entry in a script contains all its information in a single line.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-270\li270\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 7.\tab If unknown styles are used in the script, the *Default style will be used.
+\par }{\f5\lang2057 \tab For example, if lines have been pasted in from another script, without the corresponding Style information then when SSA plays the script, the Default style settings will be used.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }{\b\f5\lang2057 8.\tab If a Style specifies a font which is not installed, then Arial will be used instead.
+\par }\pard \fi-270\li270\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 \tab This can happen with scripts which you did not create yourself - the original authors may have fonts installed which you don't have.
+\par 
+\par }\pard \qc\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\fs24\ul\lang2057 \page 2. The sections in a Sub Station Alpha script
+\par 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 [Script Info]
+\par }{\f5\lang2057 This section contains headers and general information about the script.
+\par The line that says \ldblquote [Script Info]\rdblquote  }{\b\f5\lang2057 must}{\f5\lang2057  be the first line in a v4 script.
+\par 
+\par }{\b\f5\lang2057 [v4 Styles]
+\par }{\f5\lang2057 This section contains all Style definitions required by the script. Each \ldblquote Style\rdblquote  used by subtitles in the script should be defined here.
+\par 
+\par }{\b\f5\lang2057 [Events]
+\par }{\f5\lang2057 This section contains all the events for the script - all the subtitles, comments, pictures, sounds, movies and commands. Basically, everything that you see in Sub Station Alpha\rquote s main-screen \ldblquote grid\rdblquote 
+ is in this section.
+\par 
+\par }{\b\f5\lang2057 [Fonts]
+\par }{\f5\lang2057 This section contains text-encoded font files, if the user opted to embed non-standard fonts in the script. Only truetype fonts can be embedded in SSA scripts. Each font file is started with a single line in the format:\line 
+\par }{\b\f5\lang2057 fontname: <name of file>
+\par }{\f5\lang2057 
+\par The word \ldblquote }{\b\f5\lang2057 fontname}{\f5\lang2057 \rdblquote  must be in lower case (upper case will be interpretted as part of a text-encoded file). }{\b\f5\lang2057 
+\par }{\f5\lang2057 
+\par }{\b\f5\lang2057 <name of file>}{\f5\lang2057  is the file name that SSA will use when saving the font file. It is:
+\par the name of the original truetype font,
+\par plus an underscore,
+\par plus an optional \ldblquote B\rdblquote  if Bold,
+\par plus an optional \ldblquote I\rdblquote  if Italic,
+\par plus a number specifying the font encoding (character set),
+\par plus \ldblquote .ttf\rdblquote 
+\par Eg.
+\par fontname: chaucer_B0.ttf
+\par fontname: comic_0.ttf
+\par 
+\par The fontname line is followed by lines of printable characters, representing the binary values which make up the font file. Each line is 80 characters long, except the last one which may be less.\line \line 
+The conversion from binary to printable characters is a form of Uuencoding, the details of this encoding is contained in "Appendix B", below.
+\par 
+\par }{\b\f5\lang2057 [Graphics]
+\par }{\f5\lang2057 
+This sections contains text-encoded graphic files, if the user opted to embed any pictures they used in the script. The binary picture files are text-encoded, which is inefficient, but ensures that SSA scripts can still be handled by any text editor, if r
+equired.
+\par 
+\par Each graphic file is started with a single line in the format:
+\par }{\b\f5\lang2057 filename: <name of file>}{\f5\lang2057 
+\par 
+\par The word \ldblquote }{\b\f5\lang2057 filename}{\f5\lang2057 \rdblquote  must be in lower case (upper case will be interpreted as part of a text-encoded file). \line  
+\par }{\b\f5\lang2057 <name of file>}{\f5\lang2057  is the file name that SSA will use when saving the picture file. It will match the filename of a picture used in the script.\line \line 
+SSA saves any files found in the script in a subdirectory off SSA's program directory, "Pictures"
+\par eg. c:\\program files\\Sub Station Alpha v4.00\\Pictures. SSA will attempt to load files using the paths specified in the script, but if they are not found, it will look in the "Pictures" subdirectory for them.
+\par 
+\par The fontname line is followed by lines of printable characters, fontrepresenting the binary values which make up the picture font file - format is as per embedded font files.
+\par }\pard \qc\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 \page }{\b\f5\fs24\ul\lang2057 3. The line types in a Sub Station Alpha script
+\par }{\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par This briefly describes each of the line types that can appear in a Sub Station Alpha Script. Full details of the information held in each line type is in the next chapter.
+\par 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 !:}{\f5\lang2057 \tab \tab \tab \tab \tab This is a comment used in the script file only. It is not visible when you load the script into SSA.
+\par }\pard \fi-1260\li1260\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 Title:}{\f5\lang2057 \tab \tab \tab \tab This is a description of the script
+\par 
+\par }{\b\f5\lang2057 Original Script:}{\f5\lang2057 \tab The original author(s) of the script
+\par 
+\par }{\b\f5\lang2057 Original Translation:\tab }{\f5\lang2057 (optional) The original translator of the dialogue
+\par 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 Original Editing:\tab }{\f5\lang2057 
+(optional) The original script editor(s), typically whoever took the raw translation and turned it into idiomatic english and reworded for readability.
+\par 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 Original Timing:}{\f5\lang2057 \tab (optional) Whoever timed the original script
+\par 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 Synch Point:}{\f5\lang2057 \tab \tab (optional) Description of where in the video the script should begin playback.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 Script Updated By:}{\f5\lang2057 \tab (optional) Names of any other subtitling groups who edited the original script.
+\par 
+\par }{\b\f5\lang2057 Update Details:}{\f5\lang2057 \tab The details of any updates to the original script made by other subtilting groups.
+\par }{\b\f5\lang2057 
+\par ScriptType:}{\f5\lang2057 \tab \tab This is the SSA script format version eg. "V3.00".
+\par 
+\par }{\b\f5\lang2057 Collisions:}{\f5\lang2057 \tab \tab This determines how subtitles are moved, when preventing onscreen collisions
+\par 
+\par }{\b\f5\lang2057 PlayResY:}{\f5\lang2057 \tab \tab \tab This is the height of the screen used by the authors when playing the script.
+\par 
+\par }{\b\f5\lang2057 PlayResX:}{\f5\lang2057 \tab \tab \tab This is the width of the screen used by the authors when playing the script.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 PlayDepth:\tab \tab }{\f5\lang2057 This is the colour depth used by the authors when playing the script.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 Timer:}{\f5\lang2057 \tab \tab \tab This is the Timer Speed for the script, as a percentage.
+\par \tab \tab \tab \tab \tab eg. "100.0000" is exactly 100%.
+\par 
+\par \tab \tab \tab \tab \tab The timer speed is a time multiplier applied to SSA's clock to provide a ramp time.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-1260\li1260\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 Style:}{\f5\lang2057 \tab \tab \tab \tab This is a Style definition, used to format text displayed by the script.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }{\b\f5\lang2057 Dialogue:}{\f5\lang2057 \tab \tab \tab This is a Dialogue event, ie. Some text to display.
+\par 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 Comment:}{\f5\lang2057 \tab \tab This is a "comment" event.
+\par \tab \tab \tab \tab \tab This contains the same information as a Dialogue, Picture, Sound, Movie, or Command event, but it is ignored during script playback.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 Picture:}{\f5\lang2057 \tab \tab \tab This is a "picture" event, which means SSA will display the specified .bmp, .jpg, .gif, .ico or .wmf graphic.
+\par }\pard \fi-1260\li1260\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }{\b\f5\lang2057 Sound:}{\f5\lang2057 \tab \tab \tab This is a "sound" event, which means SSA will play the specified .wav file.
+\par 
+\par }{\b\f5\lang2057 Movie:}{\f5\lang2057 \tab \tab \tab This is a "movie" event, which means SSA will play the specified .avi file.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 Command:}{\f5\lang2057 \tab \tab This is a "command" event, which means SSA will execute the specified program as a background task.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \qc\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\fs24\ul\lang2057 \page 4. Header lines, [Script Info] section
+\par 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 ;}{\f5\lang2057 \tab \tab \tab \tab \tab Semicolon. Any text can follow the semicolon}{\b\f5\lang2057 
+\par }{\f5\lang2057 \tab \tab \tab \tab \tab This is a comment used in the script file only. It is not visible when you load the script into SSA. The semicolon }{\b\f5\lang2057 must}{\f5\lang2057  be the first character in the line. This replaces the }{
+\b\f5\lang2057 !:}{\f5\lang2057  line type used in previous script versions.
+\par }\pard \fi-1260\li1260\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 Title:}{\f5\lang2057 \tab \tab \tab \tab 
+This is a description of the script. If the original author(s) did not provide this information then <untitled> is automatically substituted.
+\par 
+\par }{\b\f5\lang2057 Original Script:}{\f5\lang2057 \tab The original author(s) of the script. If the original author(s) did not provide this information then <unknown> is automatically substituted.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 Original Translation:\tab }{\f5\lang2057 (optional) The original translator of the dialogue. This entry does not appear if no information was entered by the author.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 Original Editing:\tab }{\f5\lang2057 
+(optional) The original script editor(s), typically whoever took the raw translation and turned it into idiomatic english and reworded for readability. This entry does not appear if no information was entered by the author.
+\par 
+\par }{\b\f5\lang2057 Original Timing:}{\f5\lang2057 \tab (optional) Whoever timed the original script. This entry does not appear if no information was entered by the author.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 Synch Point:}{\f5\lang2057 \tab \tab 
+(optional) Description of where in the video the script should begin playback. This entry does not appear if no information was entered by the author.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 Script Updated By:}{\f5\lang2057 \tab 
+(optional) Names of any other subtitling groups who edited the original script. This entry does not appear if subsequent editors did not enter the information.
+\par 
+\par }{\b\f5\lang2057 Update Details:}{\f5\lang2057 \tab The details of any updates to the original script - made by other subtitling groups. This entry does not appear if subsequent editors did not enter any information.
+\par }{\b\f5\lang2057 
+\par ScriptType:}{\f5\lang2057 \tab \tab This is the SSA script format version eg. "V4.00". It is used by SSA to give a warning if you are using a version of SSA older than the version that created the script.
+\par 
+\par }{\b\f5\lang2057 Collisions:}{\f5\lang2057 \tab \tab This determines how subtitles are moved, when automatically preventing onscreen collisions.
+\par 
+\par \tab \tab \tab \tab \tab If the entry says "}{\b\f5\lang2057 Normal}{\f5\lang2057 " then SSA will attempt to position subtitles in the positi
+on specified by the "margins". However, subtitles can be shifted vertically to prevent onscreen collisions. With "normal" collision prevention, the subtitles will "stack up" one above the other - but they will always be positioned as close the vertical (b
+ottom) margin as possible - filling in "gaps" in other subtitles if one large enough is available.
+\par 
+\par \tab \tab \tab \tab \tab If the entry says "}{\b\f5\lang2057 Reverse}{\f5\lang2057 " then subtitles will be shifted upwards to make room for subsequent overlapping subtitles. This means the subtitles can nearl
+y always be read top-down - but it also means that the first subtitle can appear half way up the screen before the subsequent overlapping subtitles appear. It can use a lot of screen area.
+\par 
+\par }{\b\f5\lang2057 PlayResY:}{\f5\lang2057 \tab \tab \tab This is the height of the screen used by the script's author(s) when playing the script. SSA v4 will automatically select the nearest enabled setting, if you are using Directdraw playback.
+\par 
+\par }{\b\f5\lang2057 PlayResX:}{\f5\lang2057 \tab \tab \tab This is the width of the screen used by the script's author(s) when playing the script. SSA will automatically select the nearest enabled, setting if you are using Directdraw playback.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 PlayDepth:\tab \tab }{\f5\lang2057 
+This is the colour depth used by the script's author(s) when playing the script. SSA will automatically select the nearest enabled setting if you are using Directdraw playback.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 Timer:}{\f5\lang2057 \tab \tab \tab \tab This is the Timer Speed for the script, as a percentage.
+\par \tab \tab \tab \tab \tab eg. "100.0000" is exactly 100%. It has four digits following the decimal point.
+\par 
+\par \tab \tab \tab \tab \tab The timer speed is a time multiplier applied to SSA's clock to stretch or compress the
+ duration of a script. A speed greater than 100% will reduce the overall duration, and means that subtitles will progressively appear sooner and sooner. A speed less than 100% will increase the overall duration of the script means subtitles will progressi
+vely appear later and later (like a positive ramp time).\line \line The stretching or compressing only occurs during script playback - this value does not change the actual timings for each event listed in the script.
+\par 
+\par \tab \tab \tab \tab \tab Check the SSA user guide if you want to know why "Timer Speed" is more powerful than "Ramp Time", even though they both achieve the same result.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \qc\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\fs24\ul\lang2057 \page 5. Style Lines, [v4 Styles] section}{\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par Styles define the appearance and position of subtitles. All styles used by the script are are defined by a Style line in the script.
+\par 
+\par Any of the the settings in the Style, (except shadow/outline type and depth) can overridden by control codes in the subtitle text.
+\par 
+\par The fields which appear in each Style definition line are named in a special line with the line type \ldblquote Format:\rdblquote 
+. The Format line must appear before any Styles - because it defines how SSA will interpret the Style definition lines. The field names listed in the format line must be correctly spelled! The fields are as follows:
+\par }{\b\f5\lang2057 
+\par Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, TertiaryColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, AlphaLevel, Encoding
+\par }{\f5\lang2057 
+\par The format line allows new fields to be added to the script format in future, and yet allow old versions of the software to read the fields it recognises - even if the field order is changed.
+\par 
+\par Field 1:\tab }{\b\f5\lang2057 Name}{\f5\lang2057 . The name of the Style. Case sensitive. Cannot include commas.
+\par 
+\par Field 2:\tab }{\b\f5\lang2057 Fontname}{\f5\lang2057 . The fontname as used by Windows. Case-sensitive.
+\par 
+\par Field 3:\tab }{\b\f5\lang2057 Fontsize}{\f5\lang2057 .
+\par 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 4:\tab }{\b\f5\lang2057 PrimaryColour.}{\f5\lang2057 
+ A long integer BGR (blue-green-red)  value. ie. the byte order in the hexadecimal equivelent of this number is BBGGRR
+\par 
+\par \tab \tab \tab This is the colour that a subtitle will normally appear in.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 5:\tab }{\b\f5\lang2057 SecondaryColour.}{\f5\lang2057  A long integer BGR 
+(blue-green-red)  value. ie. the byte order in the hexadecimal equivelent of this number is BBGGRR
+\par 
+\par \tab \tab \tab This colour may be used instead of the Primary colour when a subtitle is automatically shifted to prevent an onscreen collsion, to distinguish the different subtitles.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 6:\tab }{\b\f5\lang2057 TertiaryColour}{\f5\lang2057 
+. A long integer BGR (blue-green-red)  value. ie. the byte order in the hexadecimal equivelent of this number is BBGGRR
+\par 
+\par \tab \tab \tab This colour may be used instead of the Primary or Secondary colour when a subtitle is automatically shifted to prevent an onscreen collsion, to distinguish the different subtitles.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 7:\tab }{\b\f5\lang2057 BackColour}{\f5\lang2057 
+. This is the colour of the subtitle outline or shadow, if these are used. A long integer BGR (blue-green-red)  value. ie. the byte order in the hexadecimal equivelent of this number is BBGGRR.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 8:\tab }{\b\f5\lang2057 Bold}{\f5\lang2057 
+. This defines whether text is bold (true) or not (false). -1 is True, 0 is False. This is independant of the Italic attribute - you can have have text which is both bold and italic.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 9:\tab }{\b\f5\lang2057 Italic}{\f5\lang2057 
+. This defines whether text is italic (true) or not (false). -1 is True, 0 is False. This is independant of the bold attribute - you can have have text which is both bold and italic.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par Field 10:\tab }{\b\f5\lang2057 BorderStyle}{\f5\lang2057 . 1=Outline + drop shadow, 3=Opaque box
+\par 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 11:\tab }{\b\f5\lang2057 Outline.}{\f5\lang2057  If BorderStyle is 1,  then this specifies the width of the outline around the text, in pixels.\line 
+Values may be 0, 1, 2, 3 or 4. 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 12:\tab }{\b\f5\lang2057 Shadow.}{\f5\lang2057  If BorderStyle is 1,  then this specifies the depth of the drop shadow behind the text, in pixels.
+ Values may be 0, 1, 2, 3 or 4. Drop shadow is always used in addition to an outline - SSA will force an outline of 1 pixel if no outline width is given.
+\par 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 13:\tab }{\b\f5\lang2057 Alignment}{\f5\lang2057 
+. This sets how text is "justified" within the Left/Right onscreen margins, and also the vertical placing. Values may be 1=Left, 2=Centered, 3=Right. Add 4 to the value for a "Toptitle". Add 8 to the value for a "Midtitle".\line 
+eg. 5 = left-justified toptitle
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 14:\tab }{\b\f5\lang2057 MarginL}{\f5\lang2057 . This defines the Left Margin in pixels. It is the distance fro
+m the left-hand edge of the screen.The three onscreen margins (MarginL, MarginR, MarginV) define areas in which the subtitle text will be displayed.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 15:\tab }{\b\f5\lang2057 MarginR}{\f5\lang2057 . This defines the Right Margin in pixels. It is the distance from the }{\b\f5\lang2057 right-hand}{\f5\lang2057 
+ edge of the screen. The three onscreen margins (MarginL, MarginR, MarginV) define areas in which the subtitle text will be displayed.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 16:\tab }{\b\f5\lang2057 MarginV}{\f5\lang2057 . This defines the vertical Left Margin in pixels.\line For a }{\b\f5\lang2057 subtitle}{\f5\lang2057 
+, it is the distance from the }{\b\f5\lang2057 bottom}{\f5\lang2057  of the screen.\line For a }{\b\f5\lang2057 toptitle}{\f5\lang2057 , it is the distance from the }{\b\f5\lang2057 top}{\f5\lang2057  of the screen.\line For a }{\b\f5\lang2057 midtitle}{
+\f5\lang2057 , the value is ignored - the text will be vertically centred\line  
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 17:\tab }{\b\f5\lang2057 AlphaLevel.}{\f5\lang2057  This defines the transparency of the text. SSA does not use this yet.
+\par 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 18:\tab }{\b\f5\lang2057 Encoding. }{\f5\lang2057 
+This specifies the font character set or encoding and on multi-lingual Windows installations it provides access to characters used in multiple than one languages. It is usually 0 (zero) for English (Western, ANSI) Windows.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 \page 
+\par }\pard \qc\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\fs24\ul\lang2057 5. Dialogue event lines, [Events] section
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 
+\par }{\f5\lang2057 These contain the subtitle text, their timings, and how it should be displayed.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 The fields which appear in each Dialogue line are defined by a }{\b\f5\lang2057 Format:}{\f5\lang2057 
+ line, which must appear before any events in the section. The format line specifies how SSA will interpret all following Event lines. The field names must be spelled correctly, and are as follows:
+\par }\pard \widctlpar {\b\f5\lang2057 
+\par Marked, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+\par 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 The last field will always be the Text field, so that it can contain comm
+as. The format line allows new fields to be added to the script format in future, and yet allow old versions of the software to read the fields it recognises - even if the field order is changed.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 1:\tab }{\b\f5\lang2057 Marked\line }{\f5\lang2057 Marked=0 means the line is not shown as "marked" in SSA.
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 \tab \tab \tab Marked=1 means the line is shown as "marked" in SSA.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 2:\tab }{\b\f5\lang2057 Start}{\f5\lang2057 \line 
+Start Time of the Event, in 0:00:00:00 format ie. Hrs:Mins:Secs:hundredths. This is the time elapsed during script playback at which the text will appear onscreen. Note that there is a }{\b\f5\lang2057 single}{\f5\lang2057  digit for the hours!
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 3:\tab }{\b\f5\lang2057 End}{\f5\lang2057 \line 
+End Time of the Event, in 0:00:00:00 format ie. Hrs:Mins:Secs:hundredths. This is the time elapsed during script playback at which the text will disappear offscreen. Note that there is a }{\b\f5\lang2057 single}{\f5\lang2057  digit for the hours!
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 4:\tab }{\b\f5\lang2057 Style\line }{\f5\lang2057 Style name. If it is "Default", then your }{\b\f5\lang2057 own}{\f5\lang2057  *Default style will be subtituted.
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 \tab \tab \tab However, the Default style used by the script author IS stored in the script even though SSA ignores it - so if you want to use it, the inf
+ormation is there - you could even change the Name in the Style definition line, so that it will appear in the list of "script" styles.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 5:\tab }{\b\f5\lang2057 Name\line }{\f5\lang2057 
+Character name. This is the name of the character who speaks the dialogue. It is for information only, to make the script is easier to follow when editing/timing.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 6:\tab }{\b\f5\lang2057 MarginL}{\f5\lang2057 \line 
+4-figure Left Margin override. The values are in pixels. All zeroes means the default margins defined by the style are used.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 7:\tab }{\b\f5\lang2057 MarginR}{\f5\lang2057 \line 4-figure Right Margin override. The v
+alues are in pixels. All zeroes means the default margins defined by the style are used.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 8:\tab }{\b\f5\lang2057 MarginV}{\f5\lang2057 \line 
+4-figure Bottom Margin override. The values are in pixels. All zeroes means the default margins defined by the style are used.
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 9:\tab }{\b\f5\lang2057 Effect}{\f5\lang2057 \line 
+Transition Effect. This is either empty, or contains information for one of the three transition effects implemented in SSA v4.x
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 \tab \tab \tab The effect names are case sensitive and must appear exactly as shown. The effect names do }{\b\f5\lang2057 not}{\f5\lang2057  have quote marks around them.
+
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par \tab \tab \tab }{\b\f5\lang2057 "Karaoke"}{\f5\lang2057  means that the text will be successively highlighted one word at a time.
+\par 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 \tab \tab \tab }{\b\f5\lang2057 "Scroll up;y1;y2;delay"}{\f5\lang2057 
+ means that the text/picture will scroll up the screen. The parameters after the words "Scroll up" are separated by semicolons.
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 \tab \tab \tab 
+The y1 and y2 values define a vertical region on the screen in which the text will scroll. The values are in pixels, and it doesn't matter which value (top or bottom) comes first. If the values are zeroes then the text will scroll up the full height of
+ the screen.
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 \tab \tab \tab The delay value can be a number from 1 to 100, and it slows down the speed of the scrolling - zero means no delay and the scrolling will be as fast as possible.
+
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 \tab \tab \tab }{\b\f5\lang2057 \ldblquote Banner;delay\rdblquote  }{\f5\lang2057 
+means that text will be forced into a single line, regardless of length, and scrolled from right to left accross the screen.\line \line 
+The delay value can be a number from 1 to 100, and it slows down the speed of the scrolling - zero means no delay and the scrolling will be as fast as possible.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Field 10:\tab }{\b\f5\lang2057 Text}{\f5\lang2057 \line Subtitle Text. This is the act
+ual text which will be displayed as a subtitle onscreen. Everything after the 9th comma is treated as the subtitle text, so it can include commas.
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 \tab \tab \tab The text can include \\n codes which is a line break, and can include Style Override control codes, which appear between braces \{ \}.
+\par }\pard \fi-990\li990\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \qc\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\fs24\ul\lang2057 \page 6. Comment event lines, [Events] section
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 These can contain the same information as any of the other event line types, but they will be ignored when the script is played.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \qc\fi-283\li283\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\fs24\ul\lang2057 \page 7. \tab Picture event lines, [Events] section
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\fs24\ul\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 These contain the same information as Dialogue events, but Field 10 contains the full path and filename of the picture to display, instead of subtitle text.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par The Style specified is ignored. The "scroll up" transition effect can be used for picture events.
+\par 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+The Left and Vertical Margin Overrides specify the bottom-left corner position of the picture. A left margin of all zeroes means that the picture will be horizontally centered. A vertical margin of all zeroes means that the picture will be vertically cent
+ered. 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par 
+\par }\pard \qc\fi-283\li283\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\fs24\ul\lang2057 \page 8. \tab Sound event lines, [Events] section
+\par }\pard \qc\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\fs24\ul\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 These contain the same information as Dialogue events, but Field 10 contains the full path and filename of the wav file to play, instead of subtitle text.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 The Style and margins are ignored. The End time is also ignored - the wav will play until it finishes, or until another wav file is played.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 If an avi movie is played at the same time as a wav is already playing, then any sound in the avi will not be heard. Similarly, if a wav starts playing when an avi movie with 
+sound is already playing then the wav will not be heard.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \fi-1260\li1260\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \qc\fi-283\li283\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\fs24\ul\lang2057 \page 9. \tab Movie event lines, [Events] section
+\par }\pard \qc\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\fs24\ul\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 These contain the same information as Dialogue events, but Field 10 contains the full path and filename of the avi file to play, instead of subtitle text.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par The Style is ignored. Transition effects are ignored.
+\par 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 The End time specifies when the movie picture will disappear - but if th eavi file lasts longer, then the sound will continue to be heard.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 The Left and vertical Margin Overrides specify the TOP-LEFT 
+corner position of the picture (unlike picture events). A left margin of all zeroes means that the picture will be horizontally centered. a vertical margin of all zeroes means that the picture will be verticall centered. 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+If an avi movie is played at the same time as a wav is already playing, then any sound in the avi will not be heard. Similarly, if a wav starts playing when an avi movie with sound is already playing then the wav will not be heard.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \qc\fi-283\li283\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\fs24\ul\lang2057 \page 10. Command event lines, [Events] section
+\par }\pard \qc\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 These contain the same information as Dialogue events, but Field 10 contains the full path and filename of the program to execute, instead of subtitle text.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 The Style is ignored. The margins are ignored. Transition effects are ignored. The End time is also ignored - the program will execute until it ends, or is "manually" closed.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 There are also internal SSA commands which can appear in SSA scripts - the "SSA:Pause", \ldblquote SSA:Wait for trigger\rdblquote 
+ command events, and genlock control commands. These all begin with "SSA:"
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 The SSA:Pause command has the same effect as pressing "P" during script playback. It is useful as a second "synch point" to resume subtitling after switching sides of a laserdisk.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 The \ldblquote SSA:Wait for audio trigger\rdblquote 
+ command has the same effect as pressing "P" during script playback, but pausing is automatically cancelled if the audio input to the computer exceeds a specified \ldblquote trigger\rdblquote  level. It is useful as a second "synch point" to r
+esume subtitling after switching sides of a laserdisk. The audio triggering can be overridden to resume playback - by pressing "P".
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par Audio triggering "times out" after 10 minutes - If no audio peak of sufficient magnitude is received, and "P" is not pressed within 10 minutes - then playback will resume anyway.
+\par }\pard \qc\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\fs24\ul\lang2057 \page Appendix A: Style override codes
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\fs24\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 This is a reference which may be useful for those of you who wish to learn the style override codes, so you can type them in manually without using the "override style" dialogue box.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par All Override codes appear within braces \{ \} except the newline \\n and \\N codes.
+\par All override codes are always preceded by a backslash \\
+\par Several overrides can be used within one set of braces.
+\par 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+Each override affects all text following the override. To apply an override only to selected text, you need a second "cancelling" override after the selected text, to "undo" the effect of the first override.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 Some overrides automatically apply to ALL the text - currently this is just alignment overrides, but more may be added later (eg. Shadow/outline depth overrides).
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 \\n}{\f5\lang2057 \tab \tab \tab \tab \tab New line (carriage return)\line \tab \tab \tab \tab \tab \\n is ignored by SSA if \ldblquote smart-wrapping\rdblquote  is enabled
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 \tab \tab \tab \tab \tab }{\b\f5\lang2057 eg. This is the first line\\nand this is the second\line \line \\N\tab \tab \tab \tab \tab }{\f5\lang2057 
+New line (carriage return). This is used by SSA instead of \\n if 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 \tab \tab \tab \tab \tab \ldblquote smart-wrapping\rdblquote  is enabled.}{\b\f5\lang2057 
+\par }{\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 \\b}{\f5\lang2057 <0 or 1>\tab \tab \tab \\b1 makes the text bold. \\b0 forces non-bold text.
+\par }{\b\f5\lang2057 \tab \tab \tab \tab \tab eg. There is a \{\\b1\}bold \{\\b0\}word here
+\par }{\f5\lang2057 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 \\i}{\f5\lang2057 <1 or 0>\tab \tab \tab \\i1 makes the text italic. \\i0 forces non-italic text.
+\par }{\b\f5\lang2057 \tab \tab \tab \tab \tab eg. There is an \{\\i1\}italicised \{\\i0\}word here
+\par }{\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 \\fn}{\f5\lang2057 <font name>\tab <font name> specifies a font which you have installed in Windows. This is case sensitive.
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 \tab \tab \tab \tab \tab eg. Here is some \{\\fnCourier New\}fixed space text}{\f5\lang2057 
+\par 
+\par \tab \tab \tab \tab \tab If you use a font name that doesn't exist, then Arial will be used instead.
+\par 
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 \\fs}{\f5\lang2057 <font size>\tab \tab <font size> is a number specifying a font point size.
+\par \tab \tab \tab \tab \tab }{\b\f5\lang2057 eg. \{\\fs16\}This is small text. \{\\fs28\}This is large text
+\par 
+\par \\fe}{\f5\lang2057 <charset>\tab \tab <charset> is a number specifying the character set (font encoding)}{\b\f5\lang2057 
+\par }{\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 \\c&H}{\f5\lang2057 <bbggrr>}{\b\f5\lang2057 &\tab }{\f5\lang2057 <bbggrr> is a hexadecimal RGB value, but in reverse order. Leading zeroes are not required.
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 \tab \tab \tab \tab \tab eg. \{\\c&HFF&\}This is pure, full intensity red
+\par \tab \tab \tab \tab \tab \tab    \{\\c&HFF00&\}This is pure, full intensity Green
+\par \tab \tab \tab \tab \tab \tab    \{\\c&HFF0000&\}This is pure, full intensity Blue
+\par \tab \tab \tab \tab \tab \tab    \{\\c&HFFFFFF&\}This is White
+\par \tab \tab \tab \tab \tab \tab    \{\\c&HA0A0A&\}This is dark grey
+\par 
+\par \\a}{\f5\lang2057 <alignment>\tab <alignment> is a number specifying the onscreen aligment/positioning of a subtitle.
+\par 
+\par \tab \tab \tab \tab \tab A value of 1 specifies a left-justified subtitle
+\par \tab \tab \tab \tab \tab A value of 2 specifies a centred subtitle
+\par \tab \tab \tab \tab \tab A value of 3 specifies a right-justified subtitle
+\par 
+\par \tab \tab \tab \tab \tab Adding 4 to the value specifies a "Toptitle"
+\par \tab \tab \tab \tab \tab Adding 8 to the value specifies a "Midtitle"
+\par 
+\par }{\b\f5\lang2057 \tab \tab \tab \tab \tab eg. \{\\a1\}This is a left-justified subtitle
+\par \tab \tab \tab \tab \tab \tab    \{\\a2\}This is a centred subtitle
+\par \tab \tab \tab \tab \tab \tab    \{\\a3\}This is a right-justified subtitle
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 \tab \tab \tab \tab \tab \tab    \{\\a5\}This is a left-justified toptitle
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 \tab \tab \tab \tab \tab \tab    \{\\a11\}This is a right-justified midtitle
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 
+\par }\pard \fi-1980\li1980\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\b\f5\lang2057 \\k}{\f5\lang2057 <duration>\tab \tab 
+<duration> is the amount of time that each section of text is highlighted for in a dialogue event with the Karaoke effect. The durations are in hundredths of seconds.
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 
+\par }{\b\f5\lang2057 \tab \tab \tab \tab \tab eg. \{\\k94\}This \{\\k48\}is \{\\k24\}a \{\\k150\}karaoke \{\\k94\}line
+\par }{\f5\lang2057 
+\par }{\b\f5\lang2057 \\r\tab \tab \tab \tab \tab }{\f5\lang2057 This cancels all previous style overrides in a line
+\par }\pard \qc\nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\lang2057 \page }{\b\f5\fs28\ul\lang2057 Appendix B: embedded font/picture encoding
+\par }\pard \nowidctlpar\tx270\tx630\tx990\tx1260\tx1980 {\f5\fs24\lang2057 
+\par }{\f5\lang2057 SSA\rquote s font and picture file embeddeding is a form of UUEncoding.
+\par 
+\par It takes a binary file, three bytes at a time, and converts the 24bits of those bytes into four 6-bit numbers. 33 is added to each of these four numbers, and the corresponding ascii character for each number is written into the script file.
+\par 
+\par The offset of 33 means that lower-case characters cannot appear in the encoded output, and this is why the \ldblquote filename\rdblquote  lines are always lower case.
+\par 
+\par Each line of an encoded file is 80 characters long, except the last one, which may be shorter.
+\par 
+\par If the length of the file being encoded is not an exact multiple of 3, then for odd-number filelengths, the last byte is 
+multiplied by hexadecimal 100, and the most significant 12 bits are converted to two characters as above. For even-number filelengths, the last two bytes are 
+multiplied by hexadecimal 10000, and the most significant 18 bits are converted to three characters as above. 
+\par 
+\par There is no terminating code for the embedded files. If a new [section] starts in the script, or if another filename line is found, or the end of the script file is reached then the file is considered complete.
+\par 
+\par }}

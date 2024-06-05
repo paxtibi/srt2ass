@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="srt2assa.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="33" Y="22"/>
+        <UsageCount Value="216"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\src\srt2ass.mediainfo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="3" Y="11"/>
+        <UsageCount Value="201"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\src\lib.assa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="45"/>
+        <CursorPos X="52" Y="56"/>
+        <UsageCount Value="215"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\src\srt2ass.application.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="34"/>
+        <CursorPos X="47" Y="48"/>
+        <UsageCount Value="137"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\src\srt2ass.model.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="32"/>
+        <CursorPos X="40" Y="52"/>
+        <UsageCount Value="137"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\src\srt2ass.chatgpt.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="35" Y="11"/>
+        <UsageCount Value="171"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\src\srt2ass.lib.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="78"/>
+        <CursorPos X="3" Y="100"/>
+        <UsageCount Value="50"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\fpcsrc\packages\fcl-image\src\fpcolorspace.pas"/>
+        <UnitName Value="FPColorSpace"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="144"/>
+        <CursorPos X="21" Y="163"/>
+        <UsageCount Value="69"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <TopLine Value="523"/>
+        <CursorPos X="53" Y="692"/>
+        <UsageCount Value="100"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\src\srt2assa.model.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="279"/>
+        <CursorPos X="39" Y="296"/>
+        <UsageCount Value="117"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\src\srt2assa.mediainfo.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="523"/>
+        <CursorPos X="36" Y="542"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\fpcsrc\packages\fcl-image\src\freetype.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="123"/>
+        <CursorPos X="22" Y="135"/>
+        <UsageCount Value="107"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\fpcsrc\packages\fcl-image\src\libfreetype.inc"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="49"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\tmp\Veleno\daniele\NancyPelosi1.srt"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="31" Y="6"/>
+        <UsageCount Value="7"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\fpcsrc\rtl\objpas\fgl.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1071"/>
+        <CursorPos Y="1091"/>
+        <UsageCount Value="1"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\repos\FFPlay-1.2.12\Applications\Lazarus\umain.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="51"/>
+        <CursorPos X="63" Y="74"/>
+        <UsageCount Value="15"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\repos\FFPlay-1.2.12\Applications\Lazarus\FFPlay.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="57" Y="17"/>
+        <UsageCount Value="15"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\fpcsrc\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="12"/>
+        <CursorPos X="27" Y="21"/>
+        <UsageCount Value="8"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\fpcsrc\rtl\objpas\types.pp"/>
+        <UnitName Value="Types"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="459"/>
+        <CursorPos X="10" Y="480"/>
+        <UsageCount Value="39"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\fpcsrc\rtl\inc\typshrdh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="118"/>
+        <CursorPos X="42" Y="154"/>
+        <UsageCount Value="1"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\fpcsrc\rtl\win64\classes.pp"/>
+        <UnitName Value="Classes"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="27"/>
+        <CursorPos X="3" Y="48"/>
+        <UsageCount Value="1"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\fpcsrc\packages\rtl-extra\src\inc\matrix.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="542"/>
+        <CursorPos X="32" Y="577"/>
+        <UsageCount Value="3"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\fpcsrc\packages\rtl-extra\src\inc\mmatimp.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="730"/>
+        <CursorPos Y="735"/>
+        <UsageCount Value="3"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\fpcsrc\packages\rtl-extra\src\inc\mvecimp.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="332"/>
+        <CursorPos X="10" Y="353"/>
+        <UsageCount Value="3"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\config_lazarus\onlinepackagemanager\packages\BGRABitmap\bgrabitmap\bgratransform.pas"/>
+        <UnitName Value="BGRATransform"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="688"/>
+        <CursorPos X="34" Y="712"/>
+        <UsageCount Value="2"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\config_lazarus\onlinepackagemanager\packages\BGRABitmap\bgrabitmap\geometrytypes.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="9" Y="23"/>
+        <UsageCount Value="2"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\config_lazarus\onlinepackagemanager\packages\BGRABitmap\bgrabitmap\bgraclasses.pas"/>
+        <UnitName Value="BGRAClasses"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="33"/>
+        <CursorPos X="3" Y="54"/>
+        <UsageCount Value="2"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\config_lazarus\onlinepackagemanager\packages\BGRABitmap\bgrabitmap\bgrascanner.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="14" Y="25"/>
+        <UsageCount Value="2"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\fpcsrc\rtl\inc\mathh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="114"/>
+        <CursorPos X="14" Y="134"/>
+        <UsageCount Value="39"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\fpcupdeluxe\fpcsrc\packages\fcl-base\src\custapp.pp"/>
+        <UnitName Value="CustApp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="619"/>
+        <CursorPos X="3" Y="597"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <Debugger>
+      <Backend Value="{EB9ECCEE-E9B9-43BC-BE6F-08B357A0FD73}"/>
+    </Debugger>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="240" TopLine="228"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="242" Column="47" TopLine="228"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="55" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="232" Column="7" TopLine="220"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="728" Column="29" TopLine="718"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="729" TopLine="718"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="731" TopLine="718"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="730" TopLine="718"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="731" TopLine="718"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="232" TopLine="222"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="233" TopLine="222"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="234" TopLine="222"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="233" Column="7" TopLine="222"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="729" TopLine="720"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="232" TopLine="222"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="233" TopLine="222"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="235" Column="12" TopLine="222"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="232" TopLine="222"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="233" TopLine="222"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="234" TopLine="222"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="235" TopLine="222"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="236" TopLine="222"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="77" Column="19" TopLine="68"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="526" Column="3" TopLine="519"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="78" Column="15" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="516" Column="42" TopLine="521"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="601" Column="49" TopLine="567"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="77" Column="15" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.application.pas"/>
+        <Caret Line="692" Column="53" TopLine="523"/>
+      </Position>
+      <Position>
+        <Filename Value="..\src\srt2assa.model.pas"/>
+        <Caret Line="38" Column="14" TopLine="13"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default">
+        <Mode Name="default">
+          <local>
+            <CommandLineParams Value="-i video_2024-02-22_00-40-20.it.srt  -o video_2024-02-22_00-40-20.ass -m video_2024-02-22_00-40-20.mp4 -p custom 630 -fs 55"/>
+            <LaunchingApplication Use="True" PathPlusParams="${TargetCmdLine}"/>
+            <WorkingDirectory Value="D:\tmp\vqbvideohandler\0000000006DD2767\0000000000001382\"/>
+          </local>
+        </Mode>
+      </Modes>
+    </RunParams>
+    <HistoryLists>
+      <List Name="WorkingDirectory" Type="File" Count="13">
+        <Item1 Value="D:\tmp\vqbvideohandler\0000000006DD2767\0000000000001382\"/>
+        <Item2 Value="D:\tmp\vqbvideohandler\0000000006DD2767\0000000000001044\"/>
+        <Item3 Value="D:\tmp\vqbvideohandler\0000000006DD2767\0000000000000E19\"/>
+        <Item4 Value="D:\tmp\vqbvideohandler\"/>
+        <Item5 Value="D:\tmp\Veleno\Paola\"/>
+        <Item6 Value="D:\tmp\Veleno\daniele"/>
+        <Item7 Value="D:\tmp\Veleno\nene\"/>
+        <Item8 Value="D:\tmp\Veleno\daniele\"/>
+        <Item9 Value="D:\tmp\Veleno\"/>
+        <Item10 Value="D:\tmp\Veleno\tree of shame\"/>
+        <Item11 Value="D:\tmp\Tucker\"/>
+        <Item12 Value="D:\tmp\Veleno\tree of shame"/>
+        <Item13 Value="D:\tmp\Veleno\doc\"/>
+      </List>
+      <List Name="LaunchingApplication" Type="File" Count="2">
+        <Item1 Value="${TargetCmdLine}"/>
+        <Item2 Value="C:\Windows\system32\cmd.exe /C ${TargetCmdLine}"/>
+      </List>
+      <List Name="CommandLineParameters" Count="20">
+        <Item1 Value="-i video_2024-02-22_00-40-20.it.srt  -o video_2024-02-22_00-40-20.ass -m video_2024-02-22_00-40-20.mp4 -p custom 630 -fs 55"/>
+        <Item2 Value="-i video_2024-02-22_00-40-20.it.srt  -o video_2024-02-22_00-40-20.ass -m video_2024-02-22_00-40-20.mp4 -p custom 630 -fs 55 "/>
+        <Item3 Value="-i video_2024-02-22_00-40-20.it.srt  -o video_2024-02-22_00-40-20.ass -m video_2024-02-22_00-40-20.mp4 -fs 55 -p custom 630"/>
+        <Item4 Value="-i video_2024-02-22_00-40-20.it.srt  -o video_2024-02-22_00-40-20.ass -m video_2024-02-22_00-40-20.mp4 -fs 55"/>
+        <Item5 Value="-i video_2024-02-22_00-40-20.it.srt  -o video_2024-02-22_00-40-20.ass -m video_2024-02-22_00-40-20.mp4"/>
+        <Item6 Value="-i video-115156839-4164-720x1278.it.srt -o video-115156839-4164-720x1278.ass -m video-115156839-4164-720x1278.mp4 -p custom 360 1000"/>
+        <Item7 Value="-i video-115156839-4164-720x1278.it.srt -o video-115156839-4164-720x1278.ass -m video-115156839-4164-720x1278.mp4 -p center"/>
+        <Item8 Value="video-115156839-4164-720x1278.it.srt  video-115156839-4164-720x1278.ass video-115156839-4164-720x1278.mp4"/>
+        <Item9 Value="video-115156839-3609-1280x720.it.srt video-115156839-3609-1280x720.ass video-115156839-3609-1280x720.mp4"/>
+        <Item10 Value="0000000006DD2767-video_20240221-231821527.it.srt 0000000006DD2767-video_20240221-231821527.ass 0000000006DD2767-video_20240221-231821527.mp4"/>
+        <Item11 Value="0000000006DD2767-IMG_2018.it.srt 0000000006DD2767-IMG_2018.ass 0000000006DD2767-IMG_2018.mp4"/>
+        <Item12 Value="Biden-c-mon-WTFBRAHH.it.srt  Biden-c-mon-WTFBRAHH.ass Biden-c-mon-WTFBRAHH.mp4"/>
+        <Item13 Value="weekend-at-biden.it.srt  weekend-at-biden.ass weekend-at-biden.mp4"/>
+        <Item14 Value="video_2024-02-11_14-36-01.it.srt  video_2024-02-11_14-36-01.ass video_2024-02-11_14-36-01.mp4"/>
+        <Item15 Value="video_2024-02-11_14-34-05.it.srt  video_2024-02-11_14-34-05.ass video_2024-02-11_14-34-05.mp4"/>
+        <Item16 Value="video_2024-02-11_14-34-05.it.srt  video_2024-02-11_14-34-05.mp4.ass video_2024-02-11_14-34-05.mp4"/>
+        <Item17 Value="video_2024-02-10_22-47-13.it.srt  video_2024-02-10_22-47-13.ass video_2024-02-10_22-47-13.mp4"/>
+        <Item18 Value="t_video_2024-02-09_11-18-34.it.srt  t_video_2024-02-09_11-18-34.ass t_video_2024-02-09_11-18-34.mp4"/>
+        <Item19 Value="t_video_2024-02-09_14-13-01.it.srt  t_video_2024-02-09_14-13-01.ass t_video_2024-02-09_14-13-01.mp4"/>
+        <Item20 Value="t_video_2024-02-09_14-12-54.srt  t_video_2024-02-09_14-12-54.ass t_video_2024-02-09_14-12-54.mp4"/>
+      </List>
+    </HistoryLists>
+  </ProjectSession>
+  <Debugging>
+    <Watches>
+      <Item>
+        <Expression Value="line"/>
+      </Item>
+      <Item>
+        <Expression Value="pchar(line)"/>
+      </Item>
+      <Item>
+        <Expression Value="Result"/>
+      </Item>
+      <Item>
+        <Expression Value="Self"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>
